@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'OnlineTenderManagement';
+  title:string = 'OnlineTenderManagement';
+  user:string = 'Şükran Uzun';
+  tender:any={tenderId:1,categoryId:1, uniPrice:50}
 }
