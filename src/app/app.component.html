@@ -1,17 +1,12 @@
-<!-- Welcome to {{title}}
-Hello {{user}}
-
-{{tender.tenderId}}
-
-<ul>
-  <li> Araba </li>
-  <li> Araba </li>
-  <li> Araba </li>
-</ul> -->
-
-<app-nav></app-nav>
-<app-category></app-category>
-<app-tender></app-tender>
-
-
-<router-outlet></router-outlet>
+<div class="container">
+  <app-nav></app-nav>
+  <div classs="row">
+    <div class="col-md-3">
+      <app-category></app-category>
+    </div>
+    <div class="col-md-9">
+      <app-tender></app-tender>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
