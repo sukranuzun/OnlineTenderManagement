@@ -8,8 +8,7 @@ import { Tender } from 'src/app/models/tender';
 })
 export class TenderComponent implements OnInit {
 
-  tenders:Tender[] = [
-  ];
+  tenders:Tender[] = [];
 
   constructor() { }
 
