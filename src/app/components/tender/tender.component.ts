@@ -9,12 +9,13 @@ import { CategoryComponent } from '../category/category.component';
   styleUrls: ['./tender.component.css']
 })
 export class TenderComponent implements OnInit {
+  getTender(): Tender[] {
+    throw new Error('Method not implemented.');
+  }
 
   tenders:Tender[] = [];
-  model: CategoryComponent;
 
   constructor() {
-    this.model = new CategoryComponent
   }
 
   ngOnInit(): void {

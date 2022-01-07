@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title:string = 'OnlineTenderManagement';
   user:string = 'Şükran Uzun';
-  tender:any={tenderId:1,categoryId:1, uniPrice:50}
+
+  tenders = [
+    {tenderId:1,categoryId:1, uniPrice:50, IsActive:true,categoryName:"Araba"},
+    {tenderId:1,categoryId:1, uniPrice:50, IsActive:false,categoryName:"Araba"},
+    {tenderId:1,categoryId:1, uniPrice:50, IsActive:true,categoryName:"Araba"},
+    {tenderId:1,categoryId:1, uniPrice:50, IsActive:false,categoryName:"Araba"}
+  ]
 }

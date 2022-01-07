@@ -2,10 +2,19 @@
   <app-nav></app-nav>
 
   <div classs="row">
-    <div class="col-md-12">
-
+    <div class="col-md-8">
       <router-outlet></router-outlet>
     </div>
+
+    <div class="col-md-4">
+      <tr *nGFor="let tender of tenders" [class.bg-secondary]="tender.isActive==false">
+        <td>{{tender.tenderId}}</td>
+        <td>{{tender.categoryName}}</td>
+        <td>{{tender.unitPrice}}</td>
+        <td>{{tender.categoryId}}</td>
+      </tr>
+    </div>
+
   </div>
 
 </div>
