@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Tender } from '../../models/tender';
+import { TenderComponent } from '../tender/tender.component';
 
 @Component({
   selector: 'app-category',
@@ -6,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent implements OnInit {
+  getCategory(): import("../../models/tender").Tender[] {
+    throw new Error('Method not implemented.');
+  }
 
-  constructor() { }
+  tenders:Tender[] = [];
+  model: TenderComponent;
 
+  constructor() {
+    this.model = new TenderComponent();
+  }
   ngOnInit(): void {
   }
 

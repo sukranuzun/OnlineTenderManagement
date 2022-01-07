@@ -1,8 +1,12 @@
-<table class="table">
-  <tr *ngFor="let tender of tenders">
-    <td>{{tender.tenderId}}</td>
-    <td>{{tender.categoryId}}</td>
-    <td>{{tender.unitPrice}}</td>
-    <td>{{tender.categoryName}}</td>
-  </tr>
-</table>
+<app-category></app-category>
+
+<div class="m-3">
+  <table class="table">
+    <tr *ngFor="let tender of tenders">
+      <td>{{tender.tenderId}}</td>
+      <td>{{tender.categoryId}}</td>
+      <td>{{tender.unitPrice}}</td>
+     <td>{{tender.categoryName}}</td>
+    </tr>
+  </table>
+</div>

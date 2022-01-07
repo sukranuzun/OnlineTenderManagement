@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from 'src/app/models/category';
 import { Tender } from 'src/app/models/tender';
+import { CategoryComponent } from '../category/category.component';
 
 @Component({
   selector: 'app-tender',
@@ -9,8 +11,11 @@ import { Tender } from 'src/app/models/tender';
 export class TenderComponent implements OnInit {
 
   tenders:Tender[] = [];
+  model: CategoryComponent;
 
-  constructor() { }
+  constructor() {
+    this.model = new CategoryComponent
+  }
 
   ngOnInit(): void {
   }
