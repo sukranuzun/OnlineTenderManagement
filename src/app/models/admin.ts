@@ -1,3 +1,3 @@
-export interface Admin{
-  adminId:number;
+export interface Admin {
+  adminId: number;
 }

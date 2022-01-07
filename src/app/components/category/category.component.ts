@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from 'src/app/models/category';
+import { CategoryService } from 'src/app/services/category.service';
 import { Tender } from '../../models/tender';
 import { TenderComponent } from '../tender/tender.component';
 
@@ -12,11 +14,8 @@ export class CategoryComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
 
-  tenders:Tender[] = [];
-  model: TenderComponent;
-
-  constructor() {
-    this.model = new TenderComponent();
+  categories: Category[]=[];
+  constructor( private categoryService: CategoryService ) {
   }
   ngOnInit(): void {
   }

@@ -1,24 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from 'src/app/models/category';
 import { Tender } from 'src/app/models/tender';
-import { CategoryComponent } from '../category/category.component';
+import { TenderService } from 'src/app/services/tender.service';
 
 @Component({
   selector: 'app-tender',
   templateUrl: './tender.component.html',
-  styleUrls: ['./tender.component.css']
+  styleUrls: ['./tender.component.css'],
+  providers:[TenderService]
 })
 export class TenderComponent implements OnInit {
-  getTender(): Tender[] {
-    throw new Error('Method not implemented.');
-  }
-
   tenders:Tender[] = [];
+  dataLoaded = false;
 
-  constructor() {
+  constructor(private tenderService:TenderService) {
   }
 
   ngOnInit(): void {
+  }
+
+  getTender(){
+/*     this.tenderService.getTender.subscribe((response: { data: Tender[]; })=>{
+      this.tenders = response.data;
+      this.dataLoaded = true;
+    }) */
   }
 
 }

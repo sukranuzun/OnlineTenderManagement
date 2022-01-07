@@ -1,4 +1,4 @@
-export interface Image{
-  imageId:number;
-  tenderId:number;
+export interface Image {
+  imageId: number;
+  tenderId: number;
 }

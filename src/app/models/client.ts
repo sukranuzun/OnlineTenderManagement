@@ -1,3 +1,3 @@
-export interface Client{
-  clientId:number;
+export interface Client {
+  clientId: number;
 }
